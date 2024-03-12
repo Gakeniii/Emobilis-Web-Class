@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DJANGO BASE</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.2-dist/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%  static 'Style.css'%}">
+    <script src="https://kit.fontawesome.com/0399d283d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Elewana Co.</a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/Home/index/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/Home/about/">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/Home/400/">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/Home/contact/">CONTACT ME</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+</section>
+
+{% if messages %}
+
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+
+{% endif %}
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="bg-info">
+    <br><p class="footer">Page made by <span id="footer">Gakeniii</span></p><br>
+</footer>
+
+</body>
+</html>

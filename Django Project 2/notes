@@ -1,0 +1,19 @@
+Blueprints of any software application.
+Create.Read.Update.Delete (CRUD)
+
+Django administration == sqlite == lightweight database
+                                    can be used during the creation of a development
+                                     but not serious databases
+mysQl - can create heavy databases that one can use in an application
+           - sql language
+           - It's relational different databases can co-relate
+           - Primary Keys are columns inside the database that identify tables uniquely
+           - when one pk is in another table it is known as a Foreign Key fk
+           this entire process is called a relationship
+           - can be run through:
+                        A terminal - Create tables using the terminal,inserting values
+                                            and creating relationships using the terminal
+                        xampp - Online server, comes with mysql embedded inside it
+                                        open source
+                        wamp - ''
+                        workbench - Mostly used in Industries very powerful

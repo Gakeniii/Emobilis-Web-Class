@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="para">Welcome to my own django application <span>&#128538</span>!</h1>
+<h5>Lorem ipsum dolor sit amet, <span id="two">consectetur adipisicing</span> elit. Autem, voluptatum.</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="one">Aspernatur aut enim iure laboriosam</span> laborum maiores minima nostrum quasi saepe totam.</p>
+
+<table>
+    <tr>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>AGE</th>
+        <th>PROFESSION</th>
+    </tr>
+    <tr>
+        <td>Makyla</td>
+        <td>Female</td>
+        <td>34</td>
+        <td>Marketer</td>
+    </tr>
+    <tr>
+        <td>Leon</td>
+        <td>Male</td>
+        <td>29</td>
+        <td>Psychiatrist</td>
+    </tr>
+    <tr>
+        <td>Obim</td>
+        <td>Male</td>
+        <td>45</td>
+        <td>Real Estate Agent</td>
+    </tr>
+</table>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class=" btn btn-success border-1">SUBMIT</button>
+</form>
+{% endblock %}

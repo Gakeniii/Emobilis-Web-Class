@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+           h1{
+            color: saddlebrown;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: Candara;
+        }
+        body{
+            background-color: lightsalmon;
+            border: 1px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            font-family: Candara;
+            font-size: 14px;
+        }
+        select{
+            background-color: lightseagreen;
+        }
+    </style>
+
+   <link ref="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+<!--Create a form with the following data captured
+First name
+Last name
+Class( Form 1-4) //radio button
+Marital status (Single, Married, Divorced, Complicated) //checkbox
+Hobby(Volleyball, Soccer, Reading)
+Country //use selected -->
+
+<h1>Registration form</h1>
+<form action="">
+    First name: <input type="text" value="" placeholder="Enter your First name"> <br><br>
+    Last name: <input type="text" value="" placeholder="Enter your Second name"> <br><br>
+
+    Class:
+    <input type="radio" name="class" value="Form 1"> Form 1
+    <input type="radio" name="class" value="Form 2"> Form 2
+    <input type="radio" name="class" value="Form 3"> Form 3
+    <input type="radio" name="class" value="Form 4"> Form 4<br><br>
+
+    Marital status:
+    <input type="checkbox"  name="marital status" value="Single" checked>Single
+    <input type="checkbox"  name="marital status" value="Married">Married
+    <input type="checkbox"  name="marital status" value="Divorced">Divorced
+    <input type="checkbox"  name="marital status" value="Complicated">Complicated<br><br>
+
+    Hobby:
+    <input type="radio" name="hobby" value="volleyball">Volleyball
+    <input type="radio" name="hobby" value="soccer">Soccer
+    <input type="radio" name="hobby" value="reading">Reading<br><br>
+
+    Country:
+    <select>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="rwanda">Rwanda</option>
+        <option value="burundi">Burundi</option>
+        <option value="zanzibar">Zanzibar</option>
+        <option value="tanzania">Tanzania</option>
+    </select><br><br>
+
+    <!--Button-->
+    <input id="submit" type="Submit">
+    <input id="submit" type="Reset">
+
+
+</form>
+</body>
+</html>

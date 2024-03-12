@@ -1,0 +1,73 @@
+*{
+    background: teal;
+}
+.para{
+    font-family: Broadway;
+    text-decoration: underline;
+    color: #2b2f32;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+h5{
+    margin-top: 29px;
+}
+p{
+    margin-top: 34px;
+    font-size: 19px;
+    font-family: "Berlin Sans FB Demi";
+}
+.one{
+    font-family: "Century Gothic";
+    text-decoration: underline #53008b;
+    font-size: 30px;
+    color: #ffea03;
+}
+#two{
+    font-family: 'Jokerman';
+    font-size: 35px;
+    text-decoration: overline underline rgba(239, 5, 131, 0.84);
+    color: darkgreen;
+}
+table{
+    margin: 2em;
+    background-color: #000000;
+    color: #f2e7c3;
+    border-left: 1px solid yellow;
+    border-top: 1px solid orangered;
+    border-right: 1px solid deeppink;
+    border-bottom: 1px solid purple;
+}
+table th{
+    text-decoration: underline;
+    padding: 10px;
+}
+.btn{
+    border: 1px solid darkslategray;
+    width: 10%;
+    height: 15%;
+    background-color: forestgreen;
+    color: white;
+}
+.btn:hover{
+    color:#000000;
+    border: 1px solid darkslategray;
+}
+.footer{
+    text-align: center;
+}
+#footer{
+    color: #fff;
+    font-family: 'Forte';
+    text-decoration: underline white;
+}
+form{
+    margin: 2em;
+}
+.form{
+    width: 10%;
+    height: 15%;
+    border: none;
+    background: #3dd5f3;
+    border-radius: 12px;
+}

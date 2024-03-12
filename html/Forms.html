@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!-<style>
+        body{
+            background-color: tan;
+        }
+        h1{
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: revert;
+            text-align: center;
+            color: chocolate;
+        }
+    </style> -->
+
+</head>
+<body>
+<h1>This is HTML form</h1>
+
+<form action=""></form> <!--<form></form--> tag for creating a form <!-- "action"= attribute of a form tag-->
+<input type="text">
+<input type="radio">   <!-- buttons for picking -->
+<input type="checkbox">
+<select name="" id="">
+    <option value="Kenya"></option>   <!--define individual items-->
+    <option value="Uganda"></option>
+</select>
+
+<!--Buttons-->
+<input type="submit">
+<input type="save">
+
+<!-- EXAMPLE-->
+<h3>Employee registration form</h3>
+<form action="">
+First Name:           <input type="text"> <br><br>
+    Last Name:           <input type="text"> <br><br>
+    Age:                      <input type="text"> <br><br>
+    <!--Gender: <input type="text>"> -->
+    Gender:
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female <br><br>
+    Marital status:       <input type="text"> <br><br>
+    <!--Location:               <input type="text"> <br> -->
+    Location:
+    <input type="checkbox" name="location" value="Nairobi" checked> Nairobi
+    <input type="checkbox" name="location" value="Kitale"> Kitale
+    <input type="checkbox" name="location" value="Meru"> Meru
+    <input type="checkbox" name="location" value="Mombasa"> Mombasa
+    <input type="checkbox" name="location" value="Naivasha"> Naivasha <br><br>
+
+    Country:
+    <select name=" dropdown">
+    <option value="Kenya">Kenya</option>
+    <option value="Uganda">Uganda</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Rwanda">Rwanda</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Somalia">Somalia</option>
+    <option value="DRC Congo">DRC Congo</option>
+    <option value="South Africa" selected>South Africa</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Ghana">Ghana</option>
+    </select> <br><br>
+
+    <input type="submit" value="Submit"><br><br>
+    <input type="submit" value="Update">
+</form>
+
+<h3>LOGIN FORM</h3>
+<form action="">
+    Username: <input type="text" value="Enter username here"> <br><br>
+    Password: <input type="text" value="Enter password here"> <br><br>
+    <input type="submit" value="LOGIN"><br><br>
+
+</form>
+</body>
+</html>

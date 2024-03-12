@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h1 style="font-family: Broadway">I am a fullstack software developer <span>&#128187</span></h1>
+<h2 style="font-family: Elephant">A certified Barista !!!<span>&#9749</span></h2>
+<h3 style="font-family: 'Berlin Sans FB Demi'">As well as a food enthusiast <span>&#127843</span><span>&#129378</span></h3>
+<button style="font-family: 'Berlin Sans FB Demi'" class="btn"> RESUME</button>
+<form action="" class="align-content-center">
+    {% csrf_token %}
+    {{form.as_p}}
+</form>
+
+{% endblock %}

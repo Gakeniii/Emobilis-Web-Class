@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List</title>
+    <style>
+        h2{
+            color: white;}
+        table{
+            margin: 3em;
+            text-align: center;
+            background-color: orangered;
+        }
+        thead{
+            text-decoration: underline 1px black;}
+        td{
+            padding: 8px;
+        }
+    </style>
+</head>
+<body bgcolor="#8b0000">
+<h2>This is the page that contains all data from the previous page. Enjoy! <span>&#11088</span></h2>
+<table border="black" >
+    <thead>
+    <tr>
+        <td>FULL NAME</td>
+        <td>MOBILE NUMBER</td>
+        <td>POSITION</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for employee in employee_list %}
+        <tr>
+            <td>{{employee.fullname}}</td>
+            <td>{{employee.mobile_no}}</td>
+            <td>{{employee.position}}</td>
+            <td>
+                <a href="{% url 'employee_update' employee.id %}"><button>UPDATE</button></a>
+                <a href="{% url 'employee_delete' employee.id %}"><button>DELETE</button></a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

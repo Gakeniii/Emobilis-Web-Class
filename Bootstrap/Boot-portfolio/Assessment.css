@@ -1,0 +1,86 @@
+section{
+    background-image: -webkit-linear-gradient(135deg, black, darkslategray),url("images/greenhouse.jpg");
+    height: 100vh;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.nav-item{
+    margin-left: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link:hover{
+    color: white;
+}
+.btn-l{
+    height: 30%;
+    width: 10%;
+    border: 1px solid yellow;
+    border-radius: 40px;
+    color: white;
+    background: transparent;
+}
+.btn-l:hover{
+    background: yellow;
+    color: #000;
+}
+.col-md-3 {
+    color: #fff;
+    margin-top: 38vh;
+}
+.col-md-3 h1{
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+}
+.btn-g{
+    height: 16%;
+    width: 45%;
+    color: #fff;
+    border: 1px solid yellow;
+    border-radius: 40px;
+    background: transparent;
+}
+.btn-g:hover{
+    background: yellow;
+    color: #000;
+}
+
+/*PORTFOLIO*/
+
+h3{
+    margin: 10vh;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.prod-item li{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+.nav-ink a:hover{
+    color: yellow;
+}
+.products{
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 65%;
+    height: 50vh;
+    border-radius: 20px;
+}
+.serve{
+    margin: 10vh;
+    border-radius:0;
+    width: 38%;
+    height: 50vh;
+}
+.card{
+    margin-top: 2px;
+}

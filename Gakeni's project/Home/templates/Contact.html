@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Feel free to contact me on...</h2>
+<i class="fa-brands fa-x-twitter fa-2xl"></i>
+<i class="fa-brands fa-instagram fa-2xl"></i>
+<i class="fa-brands fa-facebook fa-2xl"></i>
+<form action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-success">SUBMIT</button>
+</form>
+{% endblock %}
+
+

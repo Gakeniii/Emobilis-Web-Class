@@ -1,0 +1,22 @@
+h1{
+            color: saddlebrown;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: Candara;
+    }
+body{
+            background-color: lightsalmon;
+            border: 1px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            font-family: Candara;
+            font-size: 14px;
+    }
+select{
+            background-color: lightseagreen;
+    }
+

@@ -1,0 +1,44 @@
+
+JINJA METHOD ---(Dynamic connection)
+{% load static %}  == load is a key word and link different files and connect files
+href="{% static 'bootstrap-5.3.2-dist/css/bootstrap.min.css' %}"  == How files are linked using ginger method
+
+{% block (name the section that you will use in the whole application eg. content) %}
+place the content of the page in this section
+{% endblock%}
+
+{{used to link a python file with an html file using jinja templating structure}}
+Example
+{% csrf_token %}  === this is a security feature used in te django framework
+{{form.as_p}} ===  gives the form a certain structure (spacing)
+{{form.as_table}}=== gives te form a table structure
+
+Django Form
+steps;
+1. Create a form class in forms.py
+2. Instantiate the form class defined in forms.py in the views.py :
+(do this at the specific templating function)
+3. Using jinja templating syntax embed the form to the file responsible
+age = forms.IntegerField(label='Enter your age ',  min_value=18, required=True)
+#     check = forms.BooleanField(label='Do you want to join', required=False)
+#     category = forms.ChoiceField(choices=[('Student', 'Student'), ('Parent', 'Parent'), ('Teacher', 'Teacher')])
+
+
+Model Form
+steps:
+1.Create a model classin the model.py file
+2. Create the form class in the forms.py file (this converts th model class to a form)
+3. Instantiate the form class defined in forms.py in the views( do this at the specific template function)
+4. Run database migration using the command:
+    --python manage.py makemigrations    --followed by the command
+    --python manage.py migrate
+5. Create a super user account to access the django admin database dashboard using the command
+    --python manage.py createsuperuser
+6. Enter all your details in the terminal that you will use un the administration site and run server
+
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)  ====== Captures the content the user has put
+        if form.is_valid():   ======== Checks if the info put by the user is valid by checking the validity of the data put
+            form.save()
+    else:
+        form = RegistrationForm()
